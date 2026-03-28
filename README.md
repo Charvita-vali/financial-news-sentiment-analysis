@@ -63,6 +63,15 @@ Financial markets react quickly to news sentiment. This project helps analysts u
 - A **sample dataset** is included for quick testing and reproducibility  
 - A **real-world dataset** can be downloaded from Kaggle:  
   https://www.kaggle.com/datasets/ankurzing/sentiment-analysis-for-financial-news
+  
+## ▶️ How to Run
+"bash"
+git clone https://github.com/Charvita-vali/financial-news-sentiment-analysis
+cd financial-news-sentiment-analysis
+
+pip install -r requirements.txt
+
+python src/main.py
 
 ## 📊 Visualization
 
