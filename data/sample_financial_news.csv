@@ -1,0 +1,9 @@
+date,headline,sentiment_label,ticker
+2025-01-02,Company beats earnings expectations and raises guidance,Positive,AAPL
+2025-01-03,Markets remain stable as investors await jobs report,Neutral,SPY
+2025-01-06,Bank shares fall after weaker than expected quarterly results,Negative,JPM
+2025-01-07,Tech stocks rally on strong AI demand outlook,Positive,NVDA
+2025-01-08,Oil prices slip amid demand concerns,Negative,XOM
+2025-01-09,Federal Reserve signals cautious stance on rates,Neutral,SPY
+2025-01-10,Retail sales jump sharply during holiday season,Positive,AMZN
+2025-01-13,Manufacturer warns of slowing orders in Europe,Negative,BA
