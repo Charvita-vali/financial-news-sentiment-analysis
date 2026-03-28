@@ -69,3 +69,9 @@ python src/main.py
 - Fine-tune a transformer model such as FinBERT
 - Add dashboard visualizations in Power BI or Streamlit
 - Deploy as an API for real-time sentiment scoring
+
+## 📊 Output Visualizations
+
+![Sentiment Trend](outputs/sentiment_trend.png)
+![Market Trend](outputs/market_trend.png)
+![Sentiment vs Return](outputs/sentiment_vs_return.png)
