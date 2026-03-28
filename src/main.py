@@ -44,7 +44,7 @@ def plot_sentiment_vs_return(merged, output_dir):
 
 def main():
     base = Path(__file__).resolve().parent.parent
-    data_path = base / 'data' / 'sample_financial_news.csv'
+    data_path = base / 'data' / 'real_financial_news.csv'
     output_dir = base / 'outputs'
     output_dir.mkdir(exist_ok=True)
 
