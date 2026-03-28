@@ -70,8 +70,15 @@ python src/main.py
 - Add dashboard visualizations in Power BI or Streamlit
 - Deploy as an API for real-time sentiment scoring
 
-## 📊 Output Visualizations
+## Dataset
+This project uses the Financial PhraseBank dataset from Kaggle:
+https://www.kaggle.com/datasets/ankurzing/sentiment-analysis-for-financial-news
 
-![Sentiment Trend](outputs/sentiment_trend.png)
-![Market Trend](outputs/market_trend.png)
-![Sentiment vs Return](outputs/sentiment_vs_return.png)
+## Key Features
+- NLP-based sentiment classification using TF-IDF + Logistic Regression
+- Real financial dataset integration
+- Market data correlation using yfinance
+- Visualization of sentiment vs market returns
+
+## Results
+- Model Accuracy: ~72%
