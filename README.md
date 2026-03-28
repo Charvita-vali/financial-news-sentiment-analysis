@@ -1,23 +1,20 @@
-# 📊 Financial News Sentiment Analysis
+📊 Financial News Sentiment Analysis
 
 An end-to-end Natural Language Processing (NLP) project that analyzes financial news sentiment and explores its relationship with market trends.
 
----
 
-## 🚀 Overview
+🚀 Overview
 
-This project builds a machine learning pipeline to classify financial news into **Positive, Negative, and Neutral sentiment**, and analyzes how sentiment signals relate to stock market behavior.
+This project builds a machine learning pipeline to classify financial news into Positive, Negative, and Neutral sentiment, and analyzes how sentiment signals relate to stock market behavior.
 
----
 
-## 💼 Business Problem
+💼 Business Problem
 
-Financial markets are influenced not only by numerical data but also by **news sentiment**.  
+Financial markets are influenced not only by numerical data but also by news sentiment.  
 This project demonstrates how unstructured text data can be transformed into actionable insights for market analysis.
 
----
 
-## ⚙️ Tech Stack
+⚙️ Tech Stack
 
 - Python  
 - Pandas & NumPy  
@@ -26,9 +23,8 @@ This project demonstrates how unstructured text data can be transformed into act
 - yFinance  
 - NLP (TF-IDF, text preprocessing)
 
----
 
-## 🔄 Project Workflow
+🔄 Project Workflow
 
 1. Load financial news dataset  
 2. Clean and preprocess text  
@@ -39,9 +35,8 @@ This project demonstrates how unstructured text data can be transformed into act
 7. Analyze sentiment vs market trends  
 8. Visualize results  
 
----
 
-## 📂 Project Structure
+ 📂 Project Structure
 
 financial-news-sentiment-analysis/
 │
@@ -67,22 +62,22 @@ financial-news-sentiment-analysis/
 ├── README.md
 └── .gitignore
 
-## ▶️ How to Run
+
+▶️ How to Run
 
 ```bash
 git clone https://github.com/Charvita-vali/financial-news-sentiment-analysis
 cd financial-news-sentiment-analysis
 
->>>>>>> 36f0ea8 (Improved project to professional level (README, structure, documentation))
 pip install -r requirements.txt
 
 python src/main.py
 
-## 📊 Visualization
+ 📊 Visualization
 
 ![Sentiment vs Market Return](outputs/sentiment_vs_return.png)
 
-## 📈 Results
+ 📈 Results
 
 - Model Accuracy: ~72%
 - Successfully classified financial news sentiment
@@ -100,25 +95,5 @@ Generated insights from unstructured text data
 🔹 Sentiment vs Market Returns
 🔹 Market Trend
 
-⚠️ Limitations
-
-Dataset dates are synthetic/generated
-Market correlation is illustrative, not predictive
-Model performance can be improved with advanced NLP models
-
-🚀 Future Improvements
-
-Use deep learning models (LSTM, BERT)
-Add real-time news data pipeline
-Deploy as a web application
-Improve feature engineering
-
-🎯 Key Takeaways
-
-NLP can extract insights from unstructured financial data
-Feature engineering plays a critical role in model performance
-Sentiment analysis can support data-driven financial decisions
-
 🔗 Author
 Charvita Vali
-
