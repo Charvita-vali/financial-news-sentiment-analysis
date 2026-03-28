@@ -64,6 +64,10 @@ Financial markets react quickly to news sentiment. This project helps analysts u
 - A **real-world dataset** can be downloaded from Kaggle:  
   https://www.kaggle.com/datasets/ankurzing/sentiment-analysis-for-financial-news
 
+## 📊 Visualization
+
+![Sentiment vs Market Return](outputs/sentiment_vs_return.png)
+
 ## 📈 Results
 
 - Model Accuracy: ~72%
