@@ -1,84 +1,74 @@
 # Financial News Sentiment Analysis & Market Insights
 
-An end-to-end NLP project that classifies financial news sentiment and analyzes its relationship with market behavior.
+An end-to-end NLP project that classifies financial news sentiment and analyzes its relationship with stock market behavior.
 
 ## Project Overview
-This project:
-- Collects or ingests financial news headlines/articles
-- Cleans and preprocesses text data
-- Classifies sentiment as Positive, Negative, or Neutral
-- Aggregates sentiment trends over time
-- Joins sentiment outputs with market data
-- Generates insights for financial and news-based decision-making
 
-## Business Problem
-Financial markets often react quickly to news sentiment. This project helps analysts understand whether sentiment trends in financial news align with market movement and can support research, reporting, and decision-making.
+This project builds a complete data analytics pipeline that:
 
-## Tech Stack
-- Python
-- Pandas, NumPy
-- scikit-learn
-- NLTK
-- Matplotlib
-- yfinance
+- Collects or ingests financial news headlines/articles  
+- Cleans and preprocesses text data  
+- Classifies sentiment as Positive, Negative, or Neutral  
+- Aggregates sentiment trends over time  
+- Joins sentiment outputs with stock market data  
+- Generates insights for financial and news-based decision-making  
 
-## Repository Structure
-```text
-financial-news-sentiment-analysis/
-├── README.md
-├── requirements.txt
-├── .gitignore
-├── data/
-│   └── sample_financial_news.csv
-├── notebooks/
-│   └── financial_news_sentiment_analysis.ipynb
-└── src/
-    ├── data_preprocessing.py
-    ├── sentiment_model.py
-    ├── market_analysis.py
-    └── main.py
-```
+##  Business Problem
 
-## How It Works
-1. Load financial news data
-2. Clean and preprocess text
-3. Train a sentiment classification model
-4. Predict sentiment on unseen headlines
-5. Aggregate daily sentiment scores
-6. Compare sentiment trend with market returns
+Financial markets react quickly to news sentiment. This project helps analysts understand whether sentiment trends in financial news align with market movements and can support:
 
-## Sample Use Cases
-- Market intelligence
-- Financial reporting support
-- News trend monitoring
-- Investor sentiment research
+- Investment decision-making  
+- Risk analysis  
+- Market trend forecasting  
 
-## Setup
-```bash
-pip install -r requirements.txt
-python src/main.py
-```
+##  Tech Stack
 
-## Example Resume Bullet
-- Built an NLP-based sentiment analysis model to classify financial news and analyzed sentiment trends against market behavior to generate data-driven financial insights.
+- **Programming:** Python  
+- **Data Processing:** Pandas, NumPy  
+- **NLP:** TF-IDF Vectorization  
+- **Machine Learning:** Logistic Regression (Scikit-learn)  
+- **Visualization:** Matplotlib  
+- **Market Data API:** yFinance  
+- **Version Control:** Git, GitHub  
 
-## Interview Explanation
-“I built an end-to-end NLP project that classifies financial news sentiment into positive, negative, and neutral categories. Then I aggregated sentiment over time and compared it with market movement to identify relationships between media tone and financial performance. The project helped demonstrate how unstructured text data can be transformed into meaningful business insights.”
+##  Project Architecture
 
-## Next Improvements
-- Fine-tune a transformer model such as FinBERT
-- Add dashboard visualizations in Power BI or Streamlit
-- Deploy as an API for real-time sentiment scoring
+1. **Data Ingestion**  
+   - Financial news dataset (Kaggle / sample dataset)
 
-## Dataset
-This project uses the Financial PhraseBank dataset from Kaggle:
-https://www.kaggle.com/datasets/ankurzing/sentiment-analysis-for-financial-news
+2. **Data Preprocessing**  
+   - Text cleaning (lowercasing, removing special characters)  
+   - Label normalization  
 
-## Key Features
-- NLP-based sentiment classification using TF-IDF + Logistic Regression
-- Real financial dataset integration
-- Market data correlation using yfinance
-- Visualization of sentiment vs market returns
+3. **Feature Engineering**  
+   - TF-IDF vectorization  
 
-## Results
+4. **Model Training**  
+   - Logistic Regression classifier  
+
+5. **Evaluation**  
+   - Accuracy, precision, recall  
+
+6. **Market Data Integration**  
+   - Fetch stock data using yFinance  
+
+7. **Analysis**  
+   - Correlate sentiment with daily market returns  
+
+8. **Visualization**  
+   - Sentiment vs Market Return graph  
+
+##  Dataset
+
+- A **sample dataset** is included for quick testing and reproducibility  
+- A **real-world dataset** can be downloaded from Kaggle:  
+  https://www.kaggle.com/datasets/ankurzing/sentiment-analysis-for-financial-news
+
+## 📈 Results
+
 - Model Accuracy: ~72%
+- Successfully classified financial news sentiment
+- Observed correlation patterns between sentiment and market returns
+- Generated insights useful for financial decision-making
+
+
