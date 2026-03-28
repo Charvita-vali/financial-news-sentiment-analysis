@@ -1,3 +1,7 @@
+"""
+Market analysis module.
+Maps sentiment to numerical scores and compares with market data.
+"""
 import pandas as pd
 import yfinance as yf
 

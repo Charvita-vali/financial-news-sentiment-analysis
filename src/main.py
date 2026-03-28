@@ -1,3 +1,6 @@
+"""
+Main pipeline script for financial news sentiment analysis.
+"""
 from pathlib import Path
 import matplotlib.pyplot as plt
 

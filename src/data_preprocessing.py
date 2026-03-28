@@ -1,3 +1,7 @@
+"""
+Data preprocessing module for financial news sentiment analysis.
+Handles loading, cleaning, and preparing text data.
+"""
 import pandas as pd
 import re
 
@@ -7,20 +11,23 @@ def clean_text(text):
     return text
 
 def load_and_prepare_data(path):
-    df = pd.read_csv(
-        path,
-        header=None,
-        names=['sentiment_label', 'headline'],
-        encoding='latin1'
-    )
+    """
+    Load and preprocess financial news dataset.
 
-    # Normalize labels
-    df['sentiment_label'] = df['sentiment_label'].str.strip().str.lower().str.capitalize()
+    Args:
+        path (str): Path to CSV file
 
-    # Add date column for downstream analysis
+    Returns:
+        pd.DataFrame: Cleaned dataset
+    """
+    df = pd.read_csv(path, header=None)
+
+    df.columns = ['sentiment_label', 'headline']
+
+    df['sentiment_label'] = df['sentiment_label'].str.capitalize()
+
     df['date'] = pd.date_range(start='2025-01-01', periods=len(df))
 
-    # Clean text
     df['clean_headline'] = df['headline'].apply(clean_text)
 
     return df

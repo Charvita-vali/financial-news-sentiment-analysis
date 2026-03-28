@@ -1,3 +1,6 @@
+"""
+Machine learning model for sentiment classification.
+"""
 from typing import Tuple
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -5,6 +8,9 @@ from sklearn.pipeline import Pipeline
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report, accuracy_score
+import joblib
+
+joblib.dump(model, "outputs/model.joblib")
 
 def train_sentiment_model(df: pd.DataFrame) -> Tuple[Pipeline, dict]:
     X = df['clean_headline']
