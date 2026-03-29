@@ -1,71 +1,77 @@
-📊 Financial News Sentiment Analysis
+# 📊 Financial News Sentiment Analysis
 
-An end-to-end Natural Language Processing (NLP) project that analyzes financial news sentiment and explores its relationship with market trends.
+An end-to-end Natural Language Processing (NLP) project that analyzes financial news sentiment and explores its relationship with stock market trends.
 
+---
 
-🚀 Overview
+## 🚀 Project Highlights
 
-This project builds a machine learning pipeline to classify financial news into Positive, Negative, and Neutral sentiment, and analyzes how sentiment signals relate to stock market behavior.
+* Built a complete NLP pipeline for sentiment classification
+* Used TF-IDF and Logistic Regression for modeling
+* Integrated real market data using yFinance
+* Achieved ~72% model accuracy
+* Visualized sentiment trends vs stock market performance
 
+---
 
-💼 Business Problem
+## 🧠 Problem Statement
 
-Financial markets are influenced not only by numerical data but also by news sentiment.  
+Financial markets are influenced not only by numerical data but also by news sentiment.
 This project demonstrates how unstructured text data can be transformed into actionable insights for market analysis.
 
+---
 
-⚙️ Tech Stack
+## ⚙️ How It Works
 
-- Python  
-- Pandas & NumPy  
-- Scikit-learn  
-- Matplotlib  
-- yFinance  
-- NLP (TF-IDF, text preprocessing)
+1. Load financial news dataset
+2. Clean and preprocess text data
+3. Convert text into TF-IDF features
+4. Train Logistic Regression model
+5. Generate sentiment scores
+6. Merge with stock market data (S&P 500)
+7. Visualize trends and insights
 
+---
 
-🔄 Project Workflow
+## 🛠 Tech Stack
 
-1. Load financial news dataset  
-2. Clean and preprocess text  
-3. Convert text into features (TF-IDF)  
-4. Train ML model (Logistic Regression)  
-5. Evaluate model performance  
-6. Generate sentiment scores  
-7. Analyze sentiment vs market trends  
-8. Visualize results  
+* Python
+* Pandas & NumPy
+* Scikit-learn
+* Matplotlib
+* yFinance
+* NLP (TF-IDF, text preprocessing)
 
+---
 
- 📂 Project Structure
+## 📁 Project Structure
 
 financial-news-sentiment-analysis/
+│── data/
+│   ├── real_financial_news.csv
+│   ├── sample_financial_news.csv
 │
-├── data/
-│ ├── real_financial_news.csv
-│ └── sample_financial_news.csv
+│── notebooks/
+│   └── analysis.ipynb
 │
-├── notebooks/
-│ └── analysis.ipynb
+│── outputs/
+│   ├── sentiment_distribution.png
+│   ├── sentiment_vs_return.png
+│   ├── market_trend.png
 │
-├── outputs/
-│ ├── sentiment_distribution_linkedin.png
-│ ├── sentiment_vs_return.png
-│ └── market_trend.png
+│── src/
+│   ├── data_preprocessing.py
+│   ├── sentiment_model.py
+│   ├── market_analysis.py
+│   └── main.py
 │
-├── src/
-│ ├── data_preprocessing.py
-│ ├── sentiment_model.py
-│ ├── market_analysis.py
-│ └── main.py
-│
-├── requirements.txt
-├── README.md
-└── .gitignore
+│── requirements.txt
+│── README.md
 
+---
 
-▶️ How to Run
+## ▶️ How to Run
 
-```bash
 git clone https://github.com/Charvita-vali/financial-news-sentiment-analysis
 cd financial-news-sentiment-analysis
 
@@ -73,27 +79,42 @@ pip install -r requirements.txt
 
 python src/main.py
 
- 📊 Visualization
+---
+
+## 📈 Results
+
+* Model Accuracy: ~72%
+* Successfully classified financial news sentiment
+* Identified patterns between sentiment and market movements
+* Generated insights from unstructured financial data
+
+---
+
+## 📊 Visualizations
+
+### Sentiment vs Market Return
 
 ![Sentiment vs Market Return](outputs/sentiment_vs_return.png)
 
- 📈 Results
+---
 
-- Model Accuracy: ~72%
-- Successfully classified financial news sentiment
-- Observed correlation patterns between sentiment and market returns
-- Generated insights useful for financial decision-making
+## ⚠️ Limitations
 
-📊 Results
-Model Accuracy: ~72%
-Successfully classified financial news sentiment
-Generated insights from unstructured text data
+* Dataset is partially synthetic / limited
+* Market correlation is illustrative, not predictive
+* Model performance can improve with advanced NLP techniques
 
-📈 Visualizations
+---
 
-🔹 Sentiment Distribution
-🔹 Sentiment vs Market Returns
-🔹 Market Trend
+## 🔮 Future Improvements
 
-🔗 Author
-Charvita Vali
+* Implement deep learning models (LSTM, BERT)
+* Use real-time news APIs
+* Deploy as a web application
+* Improve feature engineering
+
+---
+
+## 👤 Author
+
+**Charvita Vali**
