@@ -4,10 +4,13 @@ Main pipeline script for financial news sentiment analysis.
 from pathlib import Path
 import matplotlib.pyplot as plt
 
-from data_preprocessing import load_and_prepare_data
-from sentiment_model import train_sentiment_model
-from market_analysis import build_daily_sentiment, fetch_market_data, merge_sentiment_with_market
-
+from src.data_preprocessing import load_and_prepare_data
+from src.sentiment_model import train_sentiment_model
+from src.market_analysis import (
+    build_daily_sentiment,
+    fetch_market_data,
+    merge_sentiment_with_market
+)
 
 def plot_sentiment_trend(daily_sentiment, output_dir):
     plt.figure(figsize=(10, 5))
@@ -46,7 +49,7 @@ def plot_sentiment_vs_return(merged, output_dir):
 
 
 def main():
-    base = Path(__file__).resolve().parent.parent
+    base = Path(__file__).resolve().parent
     data_path = base / 'data' / 'real_financial_news.csv'
     output_dir = base / 'outputs'
     output_dir.mkdir(exist_ok=True)
@@ -60,6 +63,7 @@ def main():
     daily_sentiment = build_daily_sentiment(df)
     market_df = fetch_market_data('SPY', '2025-01-01', '2025-01-20')
     merged = merge_sentiment_with_market(daily_sentiment, market_df)
+    merged = merged.dropna(subset=['close'])
 
     output_csv = output_dir / 'sentiment_market_output.csv'
     merged.to_csv(output_csv, index=False)

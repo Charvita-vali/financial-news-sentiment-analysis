@@ -20,7 +20,7 @@ def load_and_prepare_data(path):
     Returns:
         pd.DataFrame: Cleaned dataset
     """
-    df = pd.read_csv(path, header=None)
+    df = pd.read_csv(path, header=None, encoding='latin1')
 
     df.columns = ['sentiment_label', 'headline']
 

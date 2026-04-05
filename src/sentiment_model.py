@@ -10,7 +10,6 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report, accuracy_score
 import joblib
 
-joblib.dump(model, "outputs/model.joblib")
 
 def train_sentiment_model(df: pd.DataFrame) -> Tuple[Pipeline, dict]:
     X = df['clean_headline']
@@ -26,6 +25,7 @@ def train_sentiment_model(df: pd.DataFrame) -> Tuple[Pipeline, dict]:
     ])
 
     model.fit(X_train, y_train)
+    joblib.dump(model, "outputs/model.joblib")
     preds = model.predict(X_test)
 
     metrics = {
